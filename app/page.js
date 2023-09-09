@@ -29,10 +29,10 @@ export default function Home() {
       <img
         src={image}
         alt={name}
-        className="h-32 w-32 md:h-40 md:w-40 rounded-full object-cover border-2 border-[#FFF730]"
+        className="h-32 w-32 md:h-40 md:w-40 rounded-full object-cover border-2 border-[#F7C515]"
       />
 
-      <p className="mt-2 font-semibold text-lg">{name}</p>
+      <p className="mt-2 font-semibold text-lg text-white">{name}</p>
       </a>
     </div>
     );
@@ -132,7 +132,7 @@ export default function Home() {
     // Simulate a delay to demonstrate the loading process
     setTimeout(() => {
       setIsLoading(false);
-    }, 3000);
+    }, 1000);
   }, []);
 
   if (isLoading) {
@@ -142,7 +142,7 @@ export default function Home() {
   return (
     <>
     
-      <div className="relative bg-[#FFF730]">
+      <div className="relative bg-[#F7C515]">
         <div className="flex justify-between items-center p-4">
           <div className="flex items-center space-x-4">
             <img src="main.jpeg" alt="Logo" className="h-8 w-8 rounded-full" />
@@ -184,117 +184,92 @@ export default function Home() {
         <nav
           className={`${
             mobileMenuOpen ? "block" : "hidden"
-          } absolute top-full left-0 right-0 bg-[#FFF730] md:hidden transition-all duration-300`}
+          } absolute top-full left-0 right-0 bg-[#2F2F2F] md:hidden transition-all duration-300`}
         >
           <div className="p-4 space-y-2">
-            <a href="#" className="block text-black">
+            <a href="#" className="block text-white">
               Home
             </a>
-            <a href="#about-section" className="block text-black">
+            <a href="#about-section" className="block text-white">
               About
             </a>
-            <a href="#team-section" className="block text-black">
+            <a href="#team-section" className="block text-white">
               Team
             </a>
-            <a href="https://t.me/burndoge" className="block text-black">
+            <a href="" className="block text-white">
               Telegram
             </a>
           </div>
         </nav>
       </div>
 
-      <section className="flex flex-col items-center justify-center py-12 bg-gray-100">
+      <section className="flex flex-col items-center justify-center py-12 bg-[#2F2F2F]">
         <img
           src="main.jpeg"
           alt="Logo"
           className=" h-32 w-32 md:h-64 md:w-64 rounded-full"
         />
-        <h2 className="mt-4 text-xl font-semibold md:text-2xl">Introducing</h2>
-        <div className="mt-2 w-20 h-1 bg-[#FFF730]"></div>
-        <p className="mt-4 text-xl font-semibold text-center ">
-          <span className={`font-bold text-red-500 fire`}>Burn Doge </span>: Revolutionizing Crypto with Controlled Scarcity.
+        <h2 className="mt-4 text-xl font-semibold md:text-2xl text-white">Introducing</h2>
+        <div className="mt-2 w-20 h-1 bg-[#2F2F2F]"></div>
+        <p className="mt-4 text-xl font-semibold text-center text-white">
+          <span className={`font-bold text-[#F7C515]`}>PaxBTC </span>: where gold's stability meets Bitcoin's innovation, redefining financial security. 🪙💡💰
         </p>
       </section>
 
       <section
         id="about-section"
-        className={`flex bg-slate-300 flex-col-reverse md:flex-row items-center justify-center p-8 ${
+        className={`flex bg-[#2F2F2F] text-white flex-col-reverse md:flex-row items-center justify-center p-8 ${
           aboutSectionVisible ? "slide-in" : ""
         }`}
       >
         <img
           src="tweet.png"
           alt="About Us"
-          className={`h-auto md:h-auto rounded-lg w-full md:w-2/5 md:mr-8 object-cover hidden md:block`}
+          className={`h-auto md:h-auto rounded-lg w-full md:w-2/5 md:mr-8 object-cover md:block`}
         />
         <div className="mt-4 md:mt-0">
-          <h2 className="text-4xl md:font-bold font-semibold mb-2 fire text-red-500">BURNDOGE</h2>
+          <h2 className="text-4xl md:font-bold font-semibold mb-2 text-[#F7C515]">PaxBTC</h2>
           <p className="font-semibold mb-2">
-            <span className={`fire text-red-500`}>Burn Doge</span>: Where controlled scarcity meets community-driven growth.
-            Together, we're rewriting the rules of crypto and redefining what it
-            means to be a holder. Join us and become a part of something
+            <span className={`text-[#F7C515]`}>PaxBTC</span>: the digital currency that bridges the past and future of finance. Just as the Pax Romana brought stability to ancient Rome, PaxBTC brings stability to the volatile world of cryptocurrencies.
             revolutionary.
           </p>
           <p className="mb-2">
-            <p className={`font-bold text-xl md:text-2xl fire text-red-500`}>About Us</p>
-            At Burn Doge, we're not just another cryptocurrency we're a
-            revolution in the world of digital assets. Inspired by the
-            remarkable success of Dogecoin and driven by a passion for
-            innovation, Burn Doge brings a fresh perspective to the crypto
-            landscape. Our mission? To embrace the power of controlled scarcity
-            and redefine the value proposition for crypto holders.
+            <p className={`font-bold text-xl md:text-2xl text-[#F7C515]`}>About Us</p>
+            At PaxBTC, we're on a mission to revolutionize the world of finance by bridging the gap between the stability of gold and the innovation of Bitcoin. Our commitment to transparency, security, and financial freedom drives us to create a digital currency that empowers individuals in a rapidly evolving financial landscape.
           </p>
-          <p className="font-bold text-xl md:text-2xl fire text-red-500">Controlled Scarcity for Real Value</p>
+          <p className="font-bold text-xl md:text-2xl text-[#F7C515]">Our Vision</p>
           <p className="mb-2">
-            In a market saturated with countless tokens, Burn Doge stands out by
-            implementing a deflationary model that truly rewards its community
-            of holders. Through regular token burns, we systematically reduce
-            the supply of Burn Doge tokens, instigating a controlled scarcity
-            that inherently drives up their value. This unique approach not only
-            fuels excitement but also cultivates a sense of unity among holders
-            who recognize the potential for sustained growth. By marrying
-            cutting-edge blockchain technology with the allure of scarcity,
-            we're shaping a new era of crypto where value isn't just theoretical
-            it's tangible.
+          We envision a future where everyone has access to a secure and stable digital asset that retains its value over time. PaxBTC is the realization of this vision, providing a trustworthy and efficient means of managing wealth in the digital age.
           </p>
-          <p className="font-bold text-xl md:text-2xl fire text-red-500">Community and Innovation Unite</p>
+          <p className="font-bold text-xl md:text-2xl text-[#F7C515]">Why Choose PaxBTC?</p>
           <p className="md:mb-0 mb-6">
-            Beyond the innovative tokenomics, Burn Doge takes pride in fostering
-            a thriving community that embodies the spirit of camaraderie and
-            collaboration. Our vision is to create more than just a
-            cryptocurrency; we're building a movement. Through engaging social
-            platforms, interactive experiences, and charity initiatives, we're
-            bringing together like-minded individuals who share our passion for
-            cryptocurrency, blockchain, and pushing the boundaries of what's
-            possible. Join us on this exciting journey as we combine the
-            playfulness of the Dogecoin phenomenon with cutting-edge innovation,
-            paving the way for a brighter crypto future.
+          PaxBTC stands at the forefront of the crypto renaissance, offering a unique blend of historical reliability and modern technology. With a blockchain built on transparency and fortified by robust security measures, we provide the tools for individuals to take control of their financial destiny like never before. Join us in shaping the future of finance with PaxBTC. 🚀💼
           </p>
         </div>
       </section>
 
-      <section
+      {/* <section
         id="features-section"
         className={`py-12 bg-slate-300 text-center ${
           featuresSectionVisible ? "slide-in-up" : ""
         }`}
       >
-        <h2 className="text-3xl text-center font-semibold mb-8 fire text-red-500">Features</h2>
+        <h2 className="text-3xl text-center font-semibold mb-8 text-[#F7C515]">Features</h2>
         <div className="flex flex-wrap justify-center">
           <div className="bg-white bg-opacity-30 md:w-1/4 w-64 h-auto p-4 m-4 rounded-lg">
-            <h3 className="text-xl font-semibold mb-2 fire text-red-500">Token Name</h3>
+            <h3 className="text-xl font-semibold mb-2 text-[#F7C515]">Token Name</h3>
             <p>Burn Doge (BDT)</p>
           </div>
           <div className="bg-white bg-opacity-30 md:w-1/4 w-64 h-auto p-4 m-4 rounded-lg">
-            <h3 className="text-xl font-semibold mb-2 fire text-red-500">Token Type</h3>
+            <h3 className="text-xl font-semibold mb-2 text-[#F7C515]">Token Type</h3>
             <p>Utility Token</p>
           </div>
           <div className="bg-white bg-opacity-30 md:w-1/4 w-64 h-auto p-4 m-4 rounded-lg">
-            <h3 className="text-xl font-semibold mb-2 fire text-red-500">Total Supply</h3>
+            <h3 className="text-xl font-semibold mb-2 text-[#F7C515]">Total Supply</h3>
             <p>Initially set at 1,000,000 BDT</p>
           </div>
           <div className="bg-white bg-opacity-30 md:w-1/4 w-64 h-auto p-4 m-4 rounded-lg">
-            <h3 className="text-xl font-semibold mb-2 fire text-red-500">Token Distribution</h3>
+            <h3 className="text-xl font-semibold mb-2 text-[#F7C515]">Token Distribution</h3>
             <p> <span className="font-semibold">Initial Sale : </span></p><p> *30% of total supply allocated for the initial sale to fund development, marketing, and operational expenses.
             </p><p><span className="font-semibold">Liquidity Pool : </span> </p><p>* 70% of total supply used to establish a liquidity pool to ensure stability and facilitate trading on exchanges.
   
@@ -302,7 +277,7 @@ export default function Home() {
             </p><p><span className="font-semibold">Team and Advisors : </span></p><p>* 10% of total supply allocated for the project's core team and advisors, with a vesting period to ensure long-term commitment.</p>
           </div>
           <div className="bg-white bg-opacity-30 md:w-1/4 w-64 h-auto p-4 m-4 rounded-lg">
-            <h3 className="text-xl font-semibold mb-2 fire text-red-500">Token Utility</h3>
+            <h3 className="text-xl font-semibold mb-2 text-[#F7C515]">Token Utility</h3>
             <p>
               <span className="font-semibold">Deflationary Mechanism : </span></p><p> * A percentage (e.g., 1%) of each transaction is burned, reducing the total supply over time, thus increasing scarcity and potential value.
   
@@ -310,23 +285,23 @@ export default function Home() {
               </p><p><span className="font-semibold">Access to Features : </span></p><p>* BDT can be used to access premium features within the associated platform or ecosystem.</p>
           </div>
           <div className="bg-white bg-opacity-30 md:w-1/4 w-64 h-auto p-4 m-4 rounded-lg">
-            <h3 className="text-xl font-semibold mb-2 fire text-red-500">Liquidity and Exchanges</h3>
+            <h3 className="text-xl font-semibold mb-2 text-[#F7C515]">Liquidity and Exchanges</h3>
             <p>
             <span className="font-semibold">Listed on : </span> </p><p>BDT will be listed on several reputable exchanges to ensure liquidity and wider accessibility.
               </p><p><span className="font-semibold">Details : </span> </p><p>A portion of the liquidity pool will be used to provide initial trading pairs on exchanges, enhancing market liquidity.</p>
           </div>
-          {/* Add more div boxes as needed */}
+         
         </div>
-      </section>
+      </section> */}
 
 
       <section
         id="join-us-section"
-        className={`bg-gray-100 py-12 text-center ${
+        className={`bg-[#2F2F2F] text-white py-12 text-center ${
           joinUsSectionVisible ? 'slide-in-up' : ''
         }`}
       >
-        <h2 className="text-3xl font-semibold mb-4 fire text-red-500">Join Us</h2>
+        <h2 className="text-3xl font-semibold mb-4 text-[#F7C515]">Join Us</h2>
         <div className="flex flex-col items-center mb-4">
           <img
             src="main.jpeg"
@@ -334,7 +309,7 @@ export default function Home() {
             className="h-32 w-32 md:h-64 md:w-64 rounded-full"
           />
           <div className="mt-2 text-sm max-w-md mx-auto px-4">
-            Ready to be a part of the Burn Doge revolution? Join us today and become a valued member of our community, where innovation, controlled scarcity, and boundless possibilities await. Let's shape the future of crypto together!
+          Join us at PaxBTC, where we're revolutionizing finance by blending gold's enduring stability with Bitcoin's cutting-edge technology. Together, we're creating a secure and transparent digital currency that empowers your financial future. Be part of this exciting journey to redefine wealth and join PaxBTC today. 💪🌟🚀
           </div>
         </div>
         <div className="flex items-center justify-center space-x-4">
@@ -348,11 +323,11 @@ export default function Home() {
               className="w-8 h-8 text-white hover:text-[#DE7596]"
             />
           </a> */}
-          <a className="m-2" href="https://t.me/burndoge">
+          <a className="m-2" href="">
             <FontAwesomeIcon
               icon={faTelegram}
               size="lg"
-              className="w-8 h-8 text-black hover:text-[#FFF730]"
+              className="w-8 h-8 text-white hover:text-[#F7C515]"
             />
           </a>
         </div>
@@ -360,7 +335,7 @@ export default function Home() {
 
       <section
         id="team-section"
-        className="bg-gray-100 py-12 text-center"
+        className="bg-[#2F2F2F] py-12 text-center"
       >
         {/* <h2 className="text-3xl font-semibold mb-8">Meet Our Team</h2>
         <div className="flex flex-wrap justify-center">
@@ -374,7 +349,7 @@ export default function Home() {
           ))}
         </div> */}
         {/* <div className="flex justify-center items-center h-screen"> */}
-        <h2 className="text-3xl font-semibold mb-8 fire text-red-500">Meet Our Partners</h2>
+        <h2 className="text-3xl font-semibold mb-8 text-[#F7C515]">Meet Our Partners</h2>
       <div className="flex flex-wrap justify-center">
         {visibleMembers.map((member, index) => (
           <TeamMember
@@ -387,7 +362,7 @@ export default function Home() {
     {/* </div> */}
       </section>
 
-      <footer className="bg-[#FFF730] py-8 text-black text-center">
+      <footer className="bg-[#F7C515] py-8 text-black text-center">
         <p className="text-lg">
           Listed on Binance Smart Chain
         </p>

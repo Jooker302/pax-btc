@@ -4,8 +4,8 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Burn Doge Coin',
-  description: 'Burn Doge Coin by DxSale',
+  title: 'PaxBTC Coin',
+  description: 'PaxBTC by DxSale',
 }
 
 export default function RootLayout({ children }) {
@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href='/main.jpeg'></link>
       </head>
-      <body>{children}</body>
+      <body className='bg-[#2F2F2F]'>{children}</body>
     </html>
   )
 }
