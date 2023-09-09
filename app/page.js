@@ -196,7 +196,7 @@ export default function Home() {
             <a href="#team-section" className="block text-white">
               Team
             </a>
-            <a href="" className="block text-white">
+            <a href="https://t.me/paxbtcchat" className="block text-white">
               Telegram
             </a>
           </div>
@@ -323,7 +323,7 @@ export default function Home() {
               className="w-8 h-8 text-white hover:text-[#DE7596]"
             />
           </a> */}
-          <a className="m-2" href="">
+          <a className="m-2" href="https://t.me/paxbtcchat">
             <FontAwesomeIcon
               icon={faTelegram}
               size="lg"
