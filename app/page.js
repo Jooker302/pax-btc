@@ -230,7 +230,7 @@ export default function Home() {
         <div className="mt-4 md:mt-0">
           <h2 className="text-4xl md:font-bold font-semibold mb-2 text-[#F7C515]">PaxBTC</h2>
           <p className="font-semibold mb-2">
-            <span className={`text-[#F7C515]`}>PaxBTC</span>: the digital currency that bridges the past and future of finance. Just as the Pax Romana brought stability to ancient Rome, PaxBTC brings stability to the volatile world of cryptocurrencies.
+            <span className={``}>PaxBTC</span> the digital currency that bridges the past and future of finance. Just as the Pax Romana brought stability to ancient Rome, PaxBTC brings stability to the volatile world of cryptocurrencies.
             revolutionary.
           </p>
           <p className="mb-2">
